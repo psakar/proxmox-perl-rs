@@ -1,3 +1,14 @@
+libpve-rs-perl (0.16.0+devuan1) trixie; urgency=medium
+
+  * rebuild for Devuan against proxmox-rs with its Devuan changes: the
+    Debian release of derivatives like Devuan is recognized for the APT
+    repositories, and logging falls back to syslog without journald
+
+  * ignore the local version suffix when checking the version against
+    Cargo.toml
+
+ -- Petr Sakař <petr.sakar@chare.eu>  Tue, 10 Nov 2026 20:42:57 +0100
+
 libpve-rs-perl (0.16.0) trixie; urgency=medium
 
   * notify: rebuild against proxmox-notify 2.0, which adds nested match
